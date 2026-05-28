@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>S.A.N.G · Home Feed</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="top-nav">
+        <a href="index.html" class="logo">
+            <div class="logo-icon"><i class="fas fa-gamepad"></i></div>
+            <div><h1>S.A.N.G</h1><p>Sali Ako Next G</p></div>
+        </a>
+        <div class="nav-links">
+            <a href="index.html" class="active"><i class="fas fa-home"></i><span>Home</span></a>
+            <a href="explore.html"><i class="fas fa-compass"></i><span>Explore</span></a>
+            <a href="rankings.html"><i class="fas fa-trophy"></i><span>Rankings</span></a>
+            <a href="messages.html"><i class="fas fa-envelope"></i><span>Messages</span></a>
+            <a href="notifications.html"><i class="fas fa-bell"></i><span>Notifications</span></a>
+        </div>
+        <a href="profile.html" class="user-menu">
+            <div class="user-avatar-small"><img src="images/dennis.jpg" alt="Waduhek"></div>
+            <span>Waduhek Gaming</span>
+            <i class="fas fa-chevron-down" style="font-size: 10px;"></i>
+        </a>
+    </div>
+
+    <div class="main-grid">
+        <div class="left-panel">
+            <a href="profile.html" class="profile-card">
+                <div class="profile-avatar"><img src="images/dennis.jpg" alt="Waduhek"></div>
+                <h3>Waduhek Gaming</h3>
+                <p>@waduhekgaming</p>
+                <p style="font-size: 10px; margin-top: 6px;">Gamer</p>
+            </a>
+            <a href="profile.html" class="menu-item"><i class="fas fa-user"></i> My Profile</a>
+            <a href="messages.html" class="menu-item"><i class="fas fa-comment-dots"></i> Messages</a>
+            <a href="rankings.html" class="menu-item"><i class="fas fa-trophy"></i> Rankings</a>
+            <a href="settings.html" class="menu-item"><i class="fas fa-cog"></i> Settings</a>
+        </div>
+
+        <div class="feed-panel">
+            <div class="card">
+                <div style="display:flex; gap:12px;">
+                    <div class="profile-avatar" style="width:48px; height:48px;"><img src="images/dennis.jpg" alt="Waduhek"></div>
+                    <textarea rows="2" placeholder="What's happening in your game? Share it!" style="flex:1;"></textarea>
+                </div>
+                <div style="display:flex; gap:12px; justify-content:flex-end; margin-top:12px;">
+                    <button class="btn btn-outline"><i class="fas fa-image"></i> Media</button>
+                    <button class="btn btn-primary" onclick="alert('Post created!')"><i class="fas fa-pen"></i> Post</button>
+                </div>
+            </div>
+
+            <div style="display:flex; gap:16px; overflow-x:auto; margin-bottom:24px; padding-bottom:4px;">
+                <div style="text-align:center; min-width:65px;"><div style="width:56px;height:56px;background:linear-gradient(135deg,var(--accent),var(--primary-light));border-radius:50%;display:flex;align-items:center;justify-content:center;"><div style="width:50px;height:50px;background:var(--bg-card);border-radius:50%;display:flex;align-items:center;justify-content:center;overflow:hidden;"><img src="images/dennis.jpg" style="width:100%; height:100%; object-fit:cover;"></div></div><span style="font-size:10px;">Ikaw</span></div>
+                <div style="text-align:center; min-width:65px;"><div style="width:56px;height:56px;background:linear-gradient(135deg,var(--accent),var(--primary-light));border-radius:50%;display:flex;align-items:center;justify-content:center;"><div style="width:50px;height:50px;background:var(--bg-card);border-radius:50%;display:flex;align-items:center;justify-content:center;overflow:hidden;"><img src="images/lebron.jpg" style="width:100%; height:100%; object-fit:cover;"></div></div><span style="font-size:10px;">Lebron</span></div>
+                <div style="text-align:center; min-width:65px;"><div style="width:56px;height:56px;background:linear-gradient(135deg,var(--accent),var(--primary-light));border-radius:50%;display:flex;align-items:center;justify-content:center;"><div style="width:50px;height:50px;background:var(--bg-card);border-radius:50%;display:flex;align-items:center;justify-content:center;overflow:hidden;"><img src="images/stephen.jpg" style="width:100%; height:100%; object-fit:cover;"></div></div><span style="font-size:10px;">Stephen</span></div>
+                <div style="text-align:center; min-width:65px;"><div style="width:56px;height:56px;background:linear-gradient(135deg,var(--accent),var(--primary-light));border-radius:50%;display:flex;align-items:center;justify-content:center;"><div style="width:50px;height:50px;background:var(--bg-card);border-radius:50%;display:flex;align-items:center;justify-content:center;overflow:hidden;"><img src="images/luka.jpg" style="width:100%; height:100%; object-fit:cover;"></div></div><span style="font-size:10px;">Luka</span></div>
+            </div>
+
+      
+            <div class="card">
+                <div style="display:flex; justify-content:space-between; margin-bottom:14px;">
+                    <div style="display:flex; gap:12px;">
+                        <div class="profile-avatar" style="width:44px; height:44px; border-radius:50%; overflow:hidden;">
+                            <img src="images/lebron.jpg" alt="Lebron" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <div>
+                            <div style="font-weight:600;">Lebron Gaming</div>
+                            <div style="font-size:10px; color:var(--text-secondary);">2 hours ago</div>
+                        </div>
+                    </div>
+                    <i class="fas fa-ellipsis-h" style="cursor:pointer;"></i>
+                </div>
+                <div>
+                    <p>Reached Mythical Glory!</p>
+                    <div class="image-container">
+                        <img src="images/post1.jpg" alt="Post image" class="post-image" onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, #fbbf24, #f59e0b)'; this.parentElement.innerHTML='<div style=\'text-align:center; padding:120px 20px;\'><i class=\'fas fa-trophy\' style=\'font-size:64px; color:white;\'></i><p style=\'color:white; font-size:24px; font-weight:bold; margin-top:16px;\'>MYTHICAL GLORY</p><p style=\'color:white; font-size:18px;\'>50/100</p></div>';">
+                    </div>
+                </div>
+                <div class="post-actions">
+                    <button class="action-btn" onclick="alert('You liked this post!')"><i class="far fa-heart"></i> 124</button>
+                    <button class="action-btn" onclick="alert('Comment feature')"><i class="far fa-comment"></i> 32</button>
+                    <button class="action-btn" onclick="alert('Shared!')"><i class="fas fa-share"></i> 8</button>
+                </div>
+                <div class="reaction-group"><span class="reaction" onclick="alert('Reacted!')">12</span><span class="reaction" onclick="alert('Reacted!')">45</span><span class="reaction" onclick="alert('Reacted!')">8</span></div>
+            </div>
+
+            
+            <div class="card">
+                <div style="display:flex; justify-content:space-between; margin-bottom:14px;">
+                    <div style="display:flex; gap:12px;">
+                        <div class="profile-avatar" style="width:44px; height:44px; border-radius:50%; overflow:hidden;">
+                            <img src="images/dennis.jpg" alt="Waduhek" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <div>
+                            <div style="font-weight:600;">Waduhek Gaming</div>
+                            <div style="font-size:10px; color:var(--text-secondary);">1 hour ago</div>
+                        </div>
+                    </div>
+                    <i class="fas fa-ellipsis-h" style="cursor:pointer;"></i>
+                </div>
+                <div>
+                    <p>Rank push 500 points today! Sali Ako Next G!</p>
+                    <div class="image-container">
+                        <img src="images/post2.jpg" alt="Post image" class="post-image" onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, #3b82f6, #1e3a5f)'; this.parentElement.innerHTML='<div style=\'text-align:center; padding:120px 20px;\'><i class=\'fas fa-chart-line\' style=\'font-size:64px; color:white;\'></i><p style=\'color:white; font-size:24px; font-weight:bold; margin-top:16px;\'>RANK PUSH</p><p style=\'color:white; font-size:18px;\'>+500 points</p></div>';">
+                    </div>
+                </div>
+                <div class="post-actions">
+                    <button class="action-btn" onclick="alert('You liked this post!')"><i class="far fa-heart"></i> 567</button>
+                    <button class="action-btn" onclick="alert('Comment feature')"><i class="far fa-comment"></i> 89</button>
+                    <button class="action-btn" onclick="alert('Shared!')"><i class="fas fa-share"></i> 45</button>
+                </div>
+                <div class="reaction-group"><span class="reaction" onclick="alert('Reacted!')">234</span><span class="reaction" onclick="alert('Reacted!')">123</span><span class="reaction" onclick="alert('Reacted!')">89</span></div>
+            </div>
+
+            <div class="card">
+                <div style="display:flex; justify-content:space-between; margin-bottom:14px;">
+                    <div style="display:flex; gap:12px;">
+                        <div class="profile-avatar" style="width:44px; height:44px; border-radius:50%; overflow:hidden;">
+                            <img src="images/stephen.jpg" alt="Stephen" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <div>
+                            <div style="font-weight:600;">Stephen Gaming</div>
+                            <div style="font-size:10px; color:var(--text-secondary);">5 hours ago</div>
+                        </div>
+                    </div>
+                    <i class="fas fa-ellipsis-h" style="cursor:pointer;"></i>
+                </div>
+                <div>
+                    <p>Clutch 1v5 in Valorant!</p>
+                    <div class="image-container">
+                        <img src="images/post3.jpg" alt="Post image" class="post-image" onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, #ef4444, #7f1d1d)'; this.parentElement.innerHTML='<div style=\'text-align:center; padding:120px 20px;\'><i class=\'fas fa-crosshairs\' style=\'font-size:64px; color:white;\'></i><p style=\'color:white; font-size:24px; font-weight:bold; margin-top:16px;\'>ACE CLUTCH</p><p style=\'color:white; font-size:18px;\'>1v5</p></div>';">
+                    </div>
+                </div>
+                <div class="post-actions">
+                    <button class="action-btn" onclick="alert('You liked this post!')"><i class="far fa-heart"></i> 342</button>
+                    <button class="action-btn" onclick="alert('Comment feature')"><i class="far fa-comment"></i> 67</button>
+                    <button class="action-btn" onclick="alert('Shared!')"><i class="fas fa-share"></i> 23</button>
+                </div>
+                <div class="reaction-group"><span class="reaction" onclick="alert('Reacted!')">210</span><span class="reaction" onclick="alert('Reacted!')">78</span><span class="reaction" onclick="alert('Reacted!')">45</span></div>
+            </div>
+
+       
+            <div class="card">
+                <div style="display:flex; justify-content:space-between; margin-bottom:14px;">
+                    <div style="display:flex; gap:12px;">
+                        <div class="profile-avatar" style="width:44px; height:44px; border-radius:50%; overflow:hidden;">
+                            <img src="images/luka.jpg" alt="Luka" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <div>
+                            <div style="font-weight:600;">Luka Gaming</div>
+                            <div style="font-size:10px; color:var(--text-secondary);">3 hours ago</div>
+                        </div>
+                    </div>
+                    <i class="fas fa-ellipsis-h" style="cursor:pointer;"></i>
+                </div>
+                <div>
+                    <p>Reach Grandmaster Rank!</p>
+                    <div class="image-container">
+                        <img src="images/post4.jpg" alt="Post image" class="post-image" onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, #22c55e, #166534)'; this.parentElement.innerHTML='<div style=\'text-align:center; padding:120px 20px;\'><i class=\'fas fa-star\' style=\'font-size:64px; color:white;\'></i><p style=\'color:white; font-size:24px; font-weight:bold; margin-top:16px;\'>GRANDMASTER</p><p style=\'color:white; font-size:18px;\'>Rank Up!</p></div>';">
+                    </div>
+                </div>
+                <div class="post-actions">
+                    <button class="action-btn" onclick="alert('You liked this post!')"><i class="far fa-heart"></i> 275</button>
+                    <button class="action-btn" onclick="alert('Comment feature')"><i class="far fa-comment"></i> 53</button>
+                    <button class="action-btn" onclick="alert('Shared!')"><i class="fas fa-share"></i> 12</button>
+                </div>
+                <div class="reaction-group"><span class="reaction" onclick="alert('Reacted!')">101</span><span class="reaction" onclick="alert('Reacted!')">88</span><span class="reaction" onclick="alert('Reacted!')">34</span></div>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <div class="section-title">Notifications</div>
+            <a href="notifications.html" class="notification-item"><i class="fas fa-heart" style="color: var(--danger);"></i><span><strong>Lebron</strong> liked your post</span></a>
+            <a href="notifications.html" class="notification-item"><i class="fas fa-comment" style="color: var(--accent);"></i><span><strong>Stephen</strong> commented</span></a>
+
+            <div class="section-title">Top Rankings</div>
+            
+            
+            <a href="profile.html?user=lebron" class="rank-item" style="display:flex; align-items:center; gap:12px; text-decoration:none;">
+                <div style="width:40px; height:40px; border-radius:50%; overflow:hidden;">
+                    <img src="images/lebron.jpg" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div style="flex:1;">
+                    <div style="font-weight:600;">Lebron</div>
+                    <div style="font-size:11px; color:var(--text-secondary);">9,850 MMR</div>
+                </div>
+                <div style="background:var(--accent); padding:4px 10px; border-radius:20px; font-size:11px;">1st</div>
+            </a>
+
+            <a href="profile.html?user=stephen" class="rank-item" style="display:flex; align-items:center; gap:12px; text-decoration:none;">
+                <div style="width:40px; height:40px; border-radius:50%; overflow:hidden;">
+                    <img src="images/stephen.jpg" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div style="flex:1;">
+                    <div style="font-weight:600;">Stephen</div>
+                    <div style="font-size:11px; color:var(--text-secondary);">9,720 MMR</div>
+                </div>
+                <div style="background:var(--accent); padding:4px 10px; border-radius:20px; font-size:11px;">2nd</div>
+            </a>
+
+            
+            <a href="profile.html?user=luka" class="rank-item" style="display:flex; align-items:center; gap:12px; text-decoration:none;">
+                <div style="width:40px; height:40px; border-radius:50%; overflow:hidden;">
+                    <img src="images/luka.jpg" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div style="flex:1;">
+                    <div style="font-weight:600;">Luka</div>
+                    <div style="font-size:11px; color:var(--text-secondary);">9,580 MMR</div>
+                </div>
+                <div style="background:var(--accent); padding:4px 10px; border-radius:20px; font-size:11px;">3rd</div>
+            </a>
+
+            <div class="section-title">Trending</div>
+            <div>
+                <span class="hashtag" onclick="location.href='explore.html'">Valorant</span>
+                <span class="hashtag" onclick="location.href='explore.html'">MLBB</span>
+                <span class="hashtag" onclick="location.href='explore.html'">SANG</span>
+                <span class="hashtag" onclick="location.href='explore.html'">RankPush</span>
+            </div>
+
+            <div class="section-title">Active Games</div>
+            <div class="rank-item"><span><img src="images/valorant-logo.jpg" style="width:20px; height:20px; margin-right:8px;"> Valorant</span><span>12.4K</span></div>
+            <div class="rank-item"><span><img src="images/mlbb-logo.jpg" style="width:20px; height:20px; margin-right:8px;"> MLBB</span><span>10.2K</span></div>
+            <div class="rank-item"><span><img src="images/hok-logo.jpg" style="width:20px; height:20px; margin-right:8px;"> H.O.K</span><span>8.7K</span></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

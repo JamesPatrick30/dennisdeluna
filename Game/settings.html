@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>S.A.N.G · Settings</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="top-nav">
+        <a href="index.html" class="logo">
+            <div class="logo-icon"><i class="fas fa-gamepad"></i></div>
+            <div><h1>S.A.N.G</h1><p>Sali Ako Next G</p></div>
+        </a>
+        <div class="nav-links">
+            <a href="index.html"><i class="fas fa-home"></i><span>Home</span></a>
+            <a href="explore.html"><i class="fas fa-compass"></i><span>Explore</span></a>
+            <a href="rankings.html"><i class="fas fa-trophy"></i><span>Rankings</span></a>
+            <a href="messages.html"><i class="fas fa-envelope"></i><span>Messages</span></a>
+        </div>
+        <a href="profile.html" class="user-menu">
+            <div class="user-avatar-small"><img src="images/dennis.jpg" alt="Waduhek"></div>
+            <span>Waduhek Gaming</span>
+            <i class="fas fa-chevron-down" style="font-size: 10px;"></i>
+        </a>
+    </div>
+
+    <div class="main-grid">
+        <div class="left-panel">
+            <a href="profile.html" class="profile-card">
+                <div class="profile-avatar"><img src="images/dennis.jpg" alt="Waduhek"></div>
+                <h3>Waduhek Gaming</h3>
+                <p>@waduhekgaming</p>
+                <p style="font-size: 10px; margin-top: 6px;">Gamer</p>
+            </a>
+            <a href="profile.html" class="menu-item"><i class="fas fa-user"></i> My Profile</a>
+            <a href="messages.html" class="menu-item"><i class="fas fa-comment-dots"></i> Messages</a>
+            <a href="rankings.html" class="menu-item"><i class="fas fa-trophy"></i> Rankings</a>
+            <a href="settings.html" class="menu-item active-menu"><i class="fas fa-cog"></i> Settings</a>
+        </div>
+
+        <div class="feed-panel">
+            <div class="card">
+                <h2><i class="fas fa-cog"></i> Settings</h2>
+                <div class="section-title">Account</div>
+                <div class="rank-item"><span>Email</span><span>waduhek@sang.com</span></div>
+                <div class="rank-item"><span>Password</span><span>********</span><button class="btn-outline" style="padding:4px 12px;" onclick="alert('Change password')">Change</button></div>
+                <div class="section-title">Notifications</div>
+                <div class="rank-item"><span>Push Notifications</span><span><input type="checkbox" checked></span></div>
+                <div class="rank-item"><span>Email Notifications</span><span><input type="checkbox"></span></div>
+                <div class="section-title">Privacy</div>
+                <div class="rank-item"><span>Profile Visibility</span><span>Public</span></div>
+                <div class="rank-item"><span>Online Status</span><span><input type="checkbox" checked></span></div>
+                <button class="btn-primary" style="width:100%; margin-top:16px;" onclick="alert('Settings saved!')">Save Changes</button>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <div class="section-title">About</div>
+            <div class="card" style="padding:12px;">
+                <p style="font-size:12px;">S.A.N.G - Sali Ako Next G<br>Gaming Social Platform v1.0</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

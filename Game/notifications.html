@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>S.A.N.G · Notifications</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="top-nav">
+        <a href="index.html" class="logo">
+            <div class="logo-icon"><i class="fas fa-gamepad"></i></div>
+            <div><h1>S.A.N.G</h1><p>Sali Ako Next G</p></div>
+        </a>
+        <div class="nav-links">
+            <a href="index.html"><i class="fas fa-home"></i><span>Home</span></a>
+            <a href="explore.html"><i class="fas fa-compass"></i><span>Explore</span></a>
+            <a href="rankings.html"><i class="fas fa-trophy"></i><span>Rankings</span></a>
+            <a href="messages.html"><i class="fas fa-envelope"></i><span>Messages</span></a>
+            <a href="notifications.html" class="active"><i class="fas fa-bell"></i><span>Notifications</span></a>
+        </div>
+        <a href="profile.html" class="user-menu">
+            <div class="user-avatar-small"><img src="images/dennis.jpg" alt="Waduhek"></div>
+            <span>Waduhek Gaming</span>
+            <i class="fas fa-chevron-down" style="font-size: 10px;"></i>
+        </a>
+    </div>
+
+    <div class="main-grid">
+        <div class="left-panel">
+            <a href="profile.html" class="profile-card">
+                <div class="profile-avatar"><img src="images/dennis.jpg" alt="Waduhek"></div>
+                <h3>Waduhek Gaming</h3>
+                <p>@waduhekgaming</p>
+                <p style="font-size: 10px; margin-top: 6px;">Gamer</p>
+            </a>
+            <a href="profile.html" class="menu-item"><i class="fas fa-user"></i> My Profile</a>
+            <a href="messages.html" class="menu-item"><i class="fas fa-comment-dots"></i> Messages</a>
+            <a href="rankings.html" class="menu-item"><i class="fas fa-trophy"></i> Rankings</a>
+            <a href="settings.html" class="menu-item"><i class="fas fa-cog"></i> Settings</a>
+        </div>
+
+        <div class="feed-panel">
+            <div class="card">
+                <h2><i class="fas fa-bell"></i> All Notifications</h2>
+                
+                <!-- Gray/dark background notifications gaya ng screenshot -->
+                <div class="notification-item" style="background: rgba(255,255,255,0.05); border-radius: 14px; margin-bottom: 10px;">
+                    <span style="font-size:18px;">❤️</span>
+                    <div style="flex:1;"><strong>Lebron liked your post</strong><br><small>2 hours ago</small></div>
+                </div>
+                
+                <div class="notification-item" style="background: rgba(255,255,255,0.05); border-radius: 14px; margin-bottom: 10px;">
+                    <span style="font-size:18px;">💬</span>
+                    <div style="flex:1;"><strong>Stephen commented</strong><br><small>3 hours ago</small></div>
+                </div>
+                
+                <div class="notification-item" style="background: rgba(255,255,255,0.05); border-radius: 14px; margin-bottom: 10px;">
+                    <span style="font-size:18px;">🏆</span>
+                    <div style="flex:1;"><strong>You reached Top 50!</strong><br><small>1 day ago</small></div>
+                </div>
+                
+                <div class="notification-item" style="background: rgba(255,255,255,0.05); border-radius: 14px; margin-bottom: 10px;">
+                    <span><img src="images/valorant-logo.jpg" style="width:20px; height:20px;"></span>
+                    <div style="flex:1;"><strong>Valorant is trending</strong><br><small>2 days ago</small></div>
+                </div>
+                
+                <div class="notification-item" style="background: rgba(255,255,255,0.05); border-radius: 14px; margin-bottom: 10px;">
+                    <span style="font-size:18px;">👥</span>
+                    <div style="flex:1;"><strong>Luka invited you to play</strong><br><small>3 days ago</small></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <div class="section-title">Recent</div>
+            <div class="notification-item" style="background: rgba(255,255,255,0.05); border-radius: 14px;">
+                <span>🔔</span>
+                <span>3 new notifications</span>
+            </div>
+            
+            <div class="section-title">Top Rankings</div>
+            
+            <a href="profile.html?user=lebron" class="rank-item" style="display:flex; align-items:center; gap:12px; text-decoration:none; background: rgba(59,130,246,0.08);">
+                <div style="width:40px; height:40px; border-radius:50%; overflow:hidden;">
+                    <img src="images/lebron.jpg" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div style="flex:1;">
+                    <div style="font-weight:600;">Lebron Gaming</div>
+                    <div style="font-size:11px; color:var(--text-secondary);">9,850 MMR</div>
+                </div>
+                <div style="background:var(--accent); padding:4px 10px; border-radius:20px; font-size:11px;">1st</div>
+            </a>
+
+            <a href="profile.html?user=stephen" class="rank-item" style="display:flex; align-items:center; gap:12px; text-decoration:none; background: rgba(59,130,246,0.08); margin-top: 8px;">
+                <div style="width:40px; height:40px; border-radius:50%; overflow:hidden;">
+                    <img src="images/stephen.jpg" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div style="flex:1;">
+                    <div style="font-weight:600;">Stephen Gaming</div>
+                    <div style="font-size:11px; color:var(--text-secondary);">9,720 MMR</div>
+                </div>
+                <div style="background:var(--accent); padding:4px 10px; border-radius:20px; font-size:11px;">2nd</div>
+            </a>
+
+            <a href="profile.html?user=luka" class="rank-item" style="display:flex; align-items:center; gap:12px; text-decoration:none; background: rgba(59,130,246,0.08); margin-top: 8px;">
+                <div style="width:40px; height:40px; border-radius:50%; overflow:hidden;">
+                    <img src="images/luka.jpg" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <div style="flex:1;">
+                    <div style="font-weight:600;">Luka Gaming</div>
+                    <div style="font-size:11px; color:var(--text-secondary);">9,580 MMR</div>
+                </div>
+                <div style="background:var(--accent); padding:4px 10px; border-radius:20px; font-size:11px;">3rd</div>
+            </a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

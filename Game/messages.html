@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>S.A.N.G · Messages</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="top-nav">
+        <a href="index.html" class="logo">
+            <div class="logo-icon"><i class="fas fa-gamepad"></i></div>
+            <div><h1>S.A.N.G</h1><p>Sali Ako Next G</p></div>
+        </a>
+        <div class="nav-links">
+            <a href="index.html"><i class="fas fa-home"></i><span>Home</span></a>
+            <a href="explore.html"><i class="fas fa-compass"></i><span>Explore</span></a>
+            <a href="rankings.html"><i class="fas fa-trophy"></i><span>Rankings</span></a>
+            <a href="messages.html" class="active"><i class="fas fa-envelope"></i><span>Messages</span></a>
+             <a href="notifications.html"><i class="fas fa-bell"></i><span>Notifications</span></a>
+        </div>
+        <a href="profile.html" class="user-menu">
+            <div class="user-avatar-small"><img src="images/dennis.jpg" alt="Waduhek"></div>
+            <span>Waduhek Gaming</span>
+            <i class="fas fa-chevron-down" style="font-size: 10px;"></i>
+        </a>
+    </div>
+
+    <div class="main-grid">
+        <div class="left-panel">
+            <a href="profile.html" class="profile-card">
+                <div class="profile-avatar"><img src="images/dennis.jpg" alt="Waduhek"></div>
+                <h3>Waduhek Gaming</h3>
+                <p>@waduhekgaming</p>
+                <p style="font-size: 10px; margin-top: 6px;">Gamer</p>
+            </a>
+            <a href="profile.html" class="menu-item"><i class="fas fa-user"></i> My Profile</a>
+            <a href="messages.html" class="menu-item active-menu"><i class="fas fa-comment-dots"></i> Messages</a>
+            <a href="rankings.html" class="menu-item"><i class="fas fa-trophy"></i> Rankings</a>
+            <a href="settings.html" class="menu-item"><i class="fas fa-cog"></i> Settings</a>
+        </div>
+
+        <div class="feed-panel">
+            <div class="card">
+                <h3><i class="fas fa-comments"></i> Messages</h3>
+                <div style="display:flex; gap:16px; flex-wrap:wrap; margin-top:16px;">
+                    <div style="flex:1; min-width:200px; border-right:1px solid var(--border); padding-right:16px;">
+                        <div class="chat-item chat-contact" onclick="openChat('lebron')" id="chat-lebron">
+                            <div style="display:flex; align-items:center; gap:12px;">
+                                <div class="chat-avatar" style="width:40px; height:40px; border-radius:50%; overflow:hidden;"><img src="images/lebron.jpg" style="width:100%; height:100%; object-fit:cover;"></div>
+                                <div><span class="online-dot"></span><strong>Lebron</strong><br><small>Valorant, rank push tayo!</small></div>
+                            </div>
+                        </div>
+                        <div class="chat-item chat-contact" onclick="openChat('stephen')" id="chat-stephen">
+                            <div style="display:flex; align-items:center; gap:12px;">
+                                <div class="chat-avatar" style="width:40px; height:40px; border-radius:50%; overflow:hidden;"><img src="images/stephen.jpg" style="width:100%; height:100%; object-fit:cover;"></div>
+                                <div><span class="online-dot"></span><strong>Stephen</strong><br><small>Rank push ulit mamaya?</small></div>
+                            </div>
+                        </div>
+                        <div class="chat-item chat-contact" onclick="openChat('luka')" id="chat-luka">
+                            <div style="display:flex; align-items:center; gap:12px;">
+                                <div class="chat-avatar" style="width:40px; height:40px; border-radius:50%; overflow:hidden;"><img src="images/luka.jpg" style="width:100%; height:100%; object-fit:cover;"></div>
+                                <div><span class="offline-dot"></span><strong>Luka</strong><br><small>nice clip mo pre!</small></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="flex:2;" id="chatWindow">
+                        <div style="background:rgba(59,130,246,0.05); border-radius:18px; padding:20px; min-height:350px;">
+                            <div style="border-bottom:1px solid var(--border); padding-bottom:12px; display:flex; align-items:center; gap:12px;" id="chatHeader">
+                                <div class="chat-avatar" style="width:40px; height:40px; border-radius:50%; overflow:hidden;"><img src="images/lebron.jpg" style="width:100%; height:100%; object-fit:cover;"></div>
+                                <div><strong>Lebron</strong> <span class="online-dot"></span></div>
+                            </div>
+                            <div style="margin:20px 0;" id="chatMessages">
+                                <p><strong>Lebron Gaming:</strong> laro tayo mamaya?</p>
+                                <p><strong>Waduhek Gaming:</strong> Sali ako next g! Anong laro?</p>
+                                <p><strong>Lebron Gaming:</strong> Valorant, rank push tayo!</p>
+                            </div>
+                            <div style="display:flex; gap:8px;">
+                                <input type="text" placeholder="Type a message...">
+                                <button class="btn btn-primary">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <div class="section-title">Notifications</div>
+            <a href="notifications.html" class="notification-item"><i class="fas fa-comment" style="color: var(--accent);"></i><span>New message from Lebron</span></a>
+        </div>
+    </div>
+</div>
+
+<script>
+    const chats = {
+        lebron: {
+            name: "Lebron",
+            status: "online",
+            avatar: "images/lebron.jpg",
+            messages: [
+                { sender: "Lebron", text: "laro tayo mamaya?" },
+                { sender: "Waduhek", text: "Sali ako next g! Anong laro?" },
+                { sender: "Lebron", text: "Valorant, rank push tayo!" }
+            ]
+        },
+        stephen: {
+            name: "Stephen",
+            status: "online",
+            avatar: "images/stephen.jpg",
+            messages: [
+                { sender: "Stephen", text: "GG sa ranked kanina!" },
+                { sender: "Waduhek", text: "Ikaw din! Galing mo!" },
+                { sender: "Stephen", text: "Rank push ulit mamaya?" }
+            ]
+        },
+        luka: {
+            name: "Luka",
+            status: "offline",
+            avatar: "images/luka.jpg",
+            messages: [
+                { sender: "Luka", text: "nice clip mo pre!" },
+                { sender: "Waduhek", text: "Salamat! Galing mo din!" }
+            ]
+        }
+    };
+
+    function openChat(chatId) {
+        const chat = chats[chatId];
+        
+        document.querySelectorAll('.chat-contact').forEach(el => {
+            el.classList.remove('active-chat');
+        });
+        document.getElementById(`chat-${chatId}`).classList.add('active-chat');
+        
+        const statusDot = chat.status === 'online' ? '<span class="online-dot"></span>' : '<span class="offline-dot"></span>';
+        document.getElementById('chatHeader').innerHTML = `
+            <div class="chat-avatar" style="width:40px; height:40px; border-radius:50%; overflow:hidden;"><img src="${chat.avatar}" style="width:100%; height:100%; object-fit:cover;"></div>
+            <div><strong>${chat.name}</strong> ${statusDot}</div>
+        `;
+        
+        let messagesHtml = '';
+        chat.messages.forEach(msg => {
+            messagesHtml += `<p><strong>${msg.sender}:</strong> ${msg.text}</p>`;
+        });
+        document.getElementById('chatMessages').innerHTML = messagesHtml;
+    }
+    
+    document.getElementById('chat-lebron').classList.add('active-chat');
+</script>
+
+</body>
+</html>
